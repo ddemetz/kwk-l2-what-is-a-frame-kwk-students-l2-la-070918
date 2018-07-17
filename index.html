@@ -1,16 +1,44 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <!--were using a frame in the html-->
   </head>
 
   <body>
 
     <a-scene>
-      <a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
-      <a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
-      <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="#7BC8A4"></a-plane>
-      <a-cylinder position="1 0.75 -3" radius="0.25" height="1" color="#F88"></a-cylinder>
-      <a-sky color="#99f"></a-sky>
+      
+       <a-assets>
+    <img id="sky" src="http://green2.kingcounty.gov/smalllakes/Images/Deep_web.jpg">
+
+  </a-assets>
+  
+      <!--pretzel knot-->
+      <a-sphere src="assets/401113head_texture_0001.jpg" position="1.006 1.635 -3.02" radius=".5" rotation="0 270 0"></a-sphere>
+      
+      
+      <a-plane src="assets/Plate-6inch.jpg"position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="white" radius="2"></a-plane>
+      
+      
+<!--body-->
+      <a-cylinder position="1 0.6 -3" radius="0.25" height="1.4" color="#ad4a32"></a-cylinder>
+      
+      
+      <!--hotdog-->
+       <a-cylinder src="" position=".8 0.6 -3" radius="0.25" height="1.4" color="#c49d56"></a-cylinder> 
+       <a-cylinder src="" position="1.2 0.6 -3" radius="0.25" height="1.4" color="#c49d56"></a-cylinder>
+       
+       <a-cylinder src="" position=".4 1 -3" radius="0.05" height="1" color="black" rotation="0 0 45"></a-cylinder> 
+       <a-cylinder src="" position="1.6 0.6 -3" radius="0.05" height="1" color="black" rotation="0 0 45"></a-cylinder>
+
+      <!--hat-->
+      <a-cylinder position="1.006 2 -3.02" radius="0.5" height=".03" color="#16a074"></a-cylinder>
+      <a-cylinder position="1.006 2 -3.02" radius="0.3" height=".3" color="#16a074"></a-cylinder>
+      
+      
+      <!--a cylinder-->
+     
+  <a-sky src="http://green2.kingcounty.gov/smalllakes/Images/Deep_web.jpg"></a-sky>
     </a-scene>
 
   </body>
